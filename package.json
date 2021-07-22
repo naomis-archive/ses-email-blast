@@ -1,0 +1,62 @@
+{
+  "name": "sendgrid-experiment",
+  "version": "1.2.0",
+  "description": "A quick experiment with the SendGrid API",
+  "main": "./prod/main.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint ./src/",
+    "start": "node -r dotenv/config ./prod/index.js",
+    "test": "ts-mocha -u tdd src/tests/**/*.spec.ts --recursive --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhcarrigan/SendGrid-Experiment.git"
+  },
+  "author": "Nicholas Carrigan",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/nhcarrigan/SendGrid-Experiment/issues"
+  },
+  "homepage": "https://github.com/nhcarrigan/SendGrid-Experiment#readme",
+  "engines": {
+    "node": "^15.10.0",
+    "npm": "^7.6.0"
+  },
+  "devDependencies": {
+    "@types/chai": "4.2.15",
+    "@types/cli-progress": "3.9.1",
+    "@types/fs-extra": "9.0.9",
+    "@types/inquirer": "7.3.1",
+    "@types/mocha": "8.2.2",
+    "@types/node": "14.14.37",
+    "@typescript-eslint/eslint-plugin": "4.20.0",
+    "@typescript-eslint/parser": "4.20.0",
+    "chai": "4.3.4",
+    "eslint": "7.23.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "husky": "6.0.0",
+    "lint-staged": "10.5.4",
+    "mocha": "8.3.2",
+    "prettier": "2.2.1",
+    "ts-mocha": "8.0.0",
+    "typescript": "4.2.3"
+  },
+  "dependencies": {
+    "@sendgrid/client": "^7.4.2",
+    "@sendgrid/mail": "^7.4.2",
+    "chalk": "^4.1.0",
+    "cli-progress": "^3.9.0",
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.1.0",
+    "inquirer": "^8.0.0",
+    "spinnies": "^0.5.1"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
