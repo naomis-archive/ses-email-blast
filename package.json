@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/nhcarrigan/SendGrid-Experiment.git"
   },
-  "author": "Nicholas Carrigan",
+  "author": "Naomi Carrigan",
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/nhcarrigan/SendGrid-Experiment/issues"
